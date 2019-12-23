@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Vsite.CSharp.RadSTekstom.Testovi
 {
     [TestClass]
-    public class TestStringUBroj : ConsoleTest
+    public class StringUBroj : ConsoleTest
     {
         [TestMethod]
         public void UDoubleVraćaZadaniBroj()

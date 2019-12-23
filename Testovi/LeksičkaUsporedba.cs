@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Vsite.CSharp.RadSTekstom.Testovi
 {
     [TestClass]
-    public class TestLeksičkeUsporedbe : ConsoleTest
+    public class LeksičkaUsporedba : ConsoleTest
     {
         [TestMethod]
         public void CompareToVraćaDaJeLjubavIzaLukavZaHrvatskeLokalizacijskePostavke()

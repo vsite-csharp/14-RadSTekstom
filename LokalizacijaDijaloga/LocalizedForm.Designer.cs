@@ -1,6 +1,6 @@
 ﻿namespace Vsite.CSharp.RadSTekstom
 {
-    partial class Form1
+    partial class LocalizedForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.labelLanguage = new System.Windows.Forms.Label();
             this.comboBoxLanguages = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelGreeting = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelLanguage
@@ -56,24 +56,24 @@
             this.comboBoxLanguages.TabIndex = 1;
             this.comboBoxLanguages.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguages_SelectedIndexChanged);
             // 
-            // label1
+            // labelGreeting
             // 
-            this.label1.Location = new System.Drawing.Point(92, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Hello!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelGreeting.Location = new System.Drawing.Point(92, 121);
+            this.labelGreeting.Name = "labelGreeting";
+            this.labelGreeting.Size = new System.Drawing.Size(100, 23);
+            this.labelGreeting.TabIndex = 2;
+            this.labelGreeting.Text = "Hello!";
+            this.labelGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // LocalizedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 264);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelGreeting);
             this.Controls.Add(this.comboBoxLanguages);
             this.Controls.Add(this.labelLanguage);
-            this.Name = "Form1";
+            this.Name = "LocalizedForm";
             this.Text = "Main Form";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -81,10 +81,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelLanguage;
-        private System.Windows.Forms.ComboBox comboBoxLanguages;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox comboBoxLanguages;
+        public System.Windows.Forms.Label labelLanguage;
+        public System.Windows.Forms.Label labelGreeting;
     }
 }
 
