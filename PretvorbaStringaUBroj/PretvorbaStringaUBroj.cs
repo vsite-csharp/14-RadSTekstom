@@ -17,7 +17,7 @@ namespace Vsite.CSharp.RadSTekstom
             return double.Parse(tekst, formatProvider);
         }
 
-        // TODO:042 Dodati u donju metodu poziv metode TryParse. Ako je pretvornba uspjela, ispisati rezultat, inače ispisati poruku "Neuspješno". Pokrenuti program i provjeriti ispise
+        // Dodati u donju metodu poziv metode TryParse. Ako je pretvornba uspjela, ispisati rezultat, inače ispisati poruku "Neuspješno". Pokrenuti program i provjeriti ispise
         public static void PokušajUDouble(string tekst)
         {
             double result;
@@ -26,7 +26,7 @@ namespace Vsite.CSharp.RadSTekstom
             Console.WriteLine("Neuspješno");
         }
 
-        // TODO:043 Pokrenuti testove (4 testa u grupi "TestStringUBroj" moraju proći)
+        // Pokrenuti testove (4 testa u grupi "TestStringUBroj" moraju proći)
         static void Main(string[] args)
         {
             try
