@@ -40,7 +40,6 @@ namespace Vsite.CSharp.RadSTekstom
             Console.WriteLine($"{tekst1} {odnos} {tekst2}");
         }
 
-        // TODO:033 Pokrenuti i provjeriti testove (7 testova u grupi "TestLeksičkeUsporedbe" mora proći)
 
         static void Main(string[] args)
         {
