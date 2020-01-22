@@ -4,7 +4,7 @@ namespace Vsite.CSharp.RadSTekstom
 {
     class PretvorbaStringaUDatum
     {
-        // TODO:050 Provjeriti što će napraviti donje metode Parse i ParseExact.
+        // Provjeriti što će napraviti donje metode Parse i ParseExact.
 
         static void Main(string[] args)
         {
