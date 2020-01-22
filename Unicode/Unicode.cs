@@ -4,12 +4,9 @@ namespace Vsite.CSharp.RadSTekstom
 {
     class Unicode
     {
-        // TODO:000 Pogledati imena donjih varijabli te sadržaje tekstova
-        // TODO:001 Pokrenuti program i provjeriti ispis
         static void Main(string[] args)
         {
-            // TODO:002 Otkomentirati donju naredbu i ponovno pokrenuti program te provjeriti ispis
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             // latinica
             string varijabla = "Đakovački Božić u šumi";
@@ -25,8 +22,6 @@ namespace Vsite.CSharp.RadSTekstom
 
             string 変数 = "変数の宣言と代入と参照";
             Console.WriteLine(変数);
-
-            // TODO:003 Selektirati prethodne dvije naredbe i iz kontekstnog izbornika odabrati naredbu "Execute in interactive" te provjeriti ispis
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey(true);
