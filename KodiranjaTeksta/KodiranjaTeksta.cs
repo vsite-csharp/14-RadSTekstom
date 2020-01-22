@@ -7,7 +7,7 @@ namespace Vsite.CSharp.RadSTekstom
 {
     class KodiranjaTeksta
     {
-        // TODO:060 Pokrenuti program i provjeriti kako pojedine kodne stranice utječu na prikaz jezično-specifičnih znakova
+        // Pokrenuti program i provjeriti kako pojedine kodne stranice utječu na prikaz jezično-specifičnih znakova
 
         static void Main(string[] args)
         {
