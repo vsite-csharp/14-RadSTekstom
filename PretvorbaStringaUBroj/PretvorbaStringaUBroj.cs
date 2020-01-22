@@ -23,7 +23,8 @@ namespace Vsite.CSharp.RadSTekstom
             double result;
             if (Double.TryParse(tekst, out result))
                 Console.WriteLine(result);
-            Console.WriteLine("Neuspješno");
+            else
+                Console.WriteLine("Neuspješno");
         }
 
         // Pokrenuti testove (4 testa u grupi "TestStringUBroj" moraju proći)
