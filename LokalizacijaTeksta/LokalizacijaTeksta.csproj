@@ -53,6 +53,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Poruke.de.resx" />
+    <EmbeddedResource Include="Poruke.hr.resx" />
     <EmbeddedResource Include="Poruke.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Poruke.Designer.cs</LastGenOutput>
