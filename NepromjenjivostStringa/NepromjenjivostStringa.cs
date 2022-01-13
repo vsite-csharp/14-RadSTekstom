@@ -6,7 +6,7 @@ namespace Vsite.CSharp.RadSTekstom
     {
         static void Main(string[] args)
         {
-            // TODO:010 Pogledati kako je definirana klasa String: https://docs.microsoft.com/en-us/dotnet/api/system.string
+            // :010 Pogledati kako je definirana klasa String: https://docs.microsoft.com/en-us/dotnet/api/system.string
             // TODO:011 Pokrenuti program i provjeriti ispis.
 
             string tekst = "Dobar ";
