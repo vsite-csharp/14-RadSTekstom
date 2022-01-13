@@ -26,7 +26,7 @@ namespace Vsite.CSharp.RadSTekstom
             string 変数 = "変数の宣言と代入と参照";
             Console.WriteLine(変数);
 
-            // TODO:003 Selektirati prethodne dvije naredbe i iz kontekstnog izbornika odabrati naredbu "Execute in interactive" te provjeriti ispis
+            // 003 Selektirati prethodne dvije naredbe i iz kontekstnog izbornika odabrati naredbu "Execute in interactive" te provjeriti ispis
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey(true);
