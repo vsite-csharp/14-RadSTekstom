@@ -5,7 +5,8 @@ namespace Vsite.CSharp.RadSTekstom
     // primjer kako funkcioniraju metode sa znakovnim nizovima
     class Program
     {
-        // TODO:020 Pogledati donji kod i provjeriti što će se ispisati njegovim izvođenjem
+        // 020 Pogledati donji kod i provjeriti što će se ispisati njegovim izvođenjem
+        // U programu su prikazane string funkcije pomoću kojih se mogu izbacivati i dodavati znakovi u nizu
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
