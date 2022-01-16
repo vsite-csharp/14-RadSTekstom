@@ -18,29 +18,29 @@ namespace Vsite.CSharp.RadSTekstom
 
         public static void PozivCompareTo(string tekst1, string tekst2)
         {
-            // TODO:030 Pozvati nestatičku metodu CompareTo i njen rezultat pridružiti varijabli usporedba. Pokrenuti program i provjeriti ispise.
-            int? usporedba = null;
+            // 030 Pozvati nestatičku metodu CompareTo i njen rezultat pridružiti varijabli usporedba. Pokrenuti program i provjeriti ispise.
+            int? usporedba = tekst1.CompareTo(tekst2);
             string odnos = BrojUOdnos(usporedba);
             Console.WriteLine($"{tekst1} {odnos} {tekst2}");
         }
 
         public static void PozivCompareBezRazlikeMalaVelikaSlova(string tekst1, string tekst2, CultureInfo ci)
         {
-            // TODO:031 Pozvati statičku metodu Compare i njen rezultat pridružiti varijabli usporedba (postaviti da se zanemari razlika velika/mala slova). Pokrenuti program i provjeriti ispise.
-            int? usporedba = null;
+            // 031 Pozvati statičku metodu Compare i njen rezultat pridružiti varijabli usporedba (postaviti da se zanemari razlika velika/mala slova). Pokrenuti program i provjeriti ispise.
+            int? usporedba = String.Compare(tekst1, tekst2, true, ci);
             string odnos = BrojUOdnos(usporedba);
             Console.WriteLine($"{tekst1} {odnos} {tekst2}");
         }
 
         public static void PozivCompareOrdinal(string tekst1, string tekst2)
         {
-            // TODO:032 Pozvati statičku metodu CompareOrdinal i njen rezultat pridružiti varijabli usporedba. Pokrenuti program i provjeriti ispise.
-            int? usporedba = null;
+            // 032 Pozvati statičku metodu CompareOrdinal i njen rezultat pridružiti varijabli usporedba. Pokrenuti program i provjeriti ispise.
+            int? usporedba = String.CompareOrdinal(tekst1, tekst2);
             string odnos = BrojUOdnos(usporedba);
             Console.WriteLine($"{tekst1} {odnos} {tekst2}");
         }
 
-        // TODO:033 Pokrenuti i provjeriti testove (7 testova u grupi "TestLeksičkeUsporedbe" mora proći)
+        // 033 Pokrenuti i provjeriti testove (7 testova u grupi "TestLeksičkeUsporedbe" mora proći)
 
         static void Main(string[] args)
         {
