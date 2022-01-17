@@ -24,7 +24,7 @@ namespace Vsite.CSharp.RadSTekstom
             // 051 Popravite formate u donjim pozivima metode ParsirajDatumNeovisnoOKulturi tako da se dobivaju očekivani datumi
 
             datum = "12.05.5"; // Datum 12. 5. 2005.
-            dt = ParsirajDatumNeovisnoOKulturi(datum, "dd.MM.y");
+            dt = ParsirajDatumNeovisnoOKulturi(datum, "dd.MM.y"); 
             Console.WriteLine(dt);
 
             datum = "05/27/2012"; // Datum 27. 5. 2012.
