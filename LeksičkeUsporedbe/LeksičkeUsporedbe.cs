@@ -27,7 +27,7 @@ namespace Vsite.CSharp.RadSTekstom
         public static void PozivCompareBezRazlikeMalaVelikaSlova(string tekst1, string tekst2, CultureInfo ci)
         {
             // 031 Pozvati statičku metodu Compare i njen rezultat pridružiti varijabli usporedba (postaviti da se zanemari razlika velika/mala slova). Pokrenuti program i provjeriti ispise.
-            int? usporedba = string.Compare(tekst1, tekst1, ci, CompareOptions.IgnoreCase );
+            int? usporedba = string.Compare(tekst1, tekst2,  ci, CompareOptions.IgnoreCase);
             string odnos = BrojUOdnos(usporedba);
             Console.WriteLine($"{tekst1} {odnos} {tekst2}");
         }
