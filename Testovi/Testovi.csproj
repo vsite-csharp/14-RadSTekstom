@@ -57,6 +57,9 @@
     <Compile Include="StringUBroj.cs" />
     <Compile Include="LokalizacijaTeksta.cs" />
     <Compile Include="StringUDatum.cs" />
+    <Compile Include="NepromjenjivostStringa.cs" />
+    <Compile Include="KodiranjeBase64.cs" />
+    <Compile Include="StringBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Funkcije\Funkcije.csproj">
@@ -66,6 +69,10 @@
     <ProjectReference Include="..\KodiranjaTeksta\KodiranjaTeksta.csproj">
       <Project>{4eebda40-75bb-493d-b95b-d2fd668abe62}</Project>
       <Name>KodiranjaTeksta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KodiranjeBase64\KodiranjeBase64.csproj">
+      <Project>{45056a7f-fac5-43ef-a0b4-800edaa8742b}</Project>
+      <Name>KodiranjeBase64</Name>
     </ProjectReference>
     <ProjectReference Include="..\LeksičkeUsporedbe\LeksičkeUsporedbe.csproj">
       <Project>{620cdeb8-c7a2-4cc9-9c69-11c4d3febfea}</Project>
@@ -90,6 +97,10 @@
     <ProjectReference Include="..\PretvorbaStringaUDatum\PretvorbaStringaUDatum.csproj">
       <Project>{00d55178-cbea-4d0c-ad7b-1a836ce80561}</Project>
       <Name>PretvorbaStringaUDatum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringBuilder\StringBuilder.csproj">
+      <Project>{98e4635e-4a71-4707-af8e-460263277862}</Project>
+      <Name>StringBuilder</Name>
     </ProjectReference>
     <ProjectReference Include="..\Unicode\Unicode.csproj">
       <Project>{1bd65a06-ea2a-472f-ab33-339aa628e3f3}</Project>

@@ -10,9 +10,18 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
     {
         protected class ConsoleTestWriter : StringWriter
         {
+            public override void WriteLine()
+            {
+                output.Enqueue(string.Empty);
+            }
             public override void WriteLine(string text)
             {
                 output.Enqueue(text);
+            }
+
+            public override void WriteLine(char ch)
+            {
+                output.Enqueue(ch);
             }
 
             public override void WriteLine(int number)
@@ -33,6 +42,11 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
             public string GetString()
             {
                 return (string)output.Dequeue();
+            }
+
+            public char GetChar()
+            {
+                return (char)output.Dequeue();
             }
 
             public int GetInt()
