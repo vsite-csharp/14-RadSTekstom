@@ -10,7 +10,7 @@ namespace Vsite.CSharp.RadSTekstom
         // TODO:083 U Poruke.hr.resx promijeniti vrijednost resursa "Pozdrav" u "Dobar dan!", a resursa "KakoSte" u "Kako ste?" (bez navodnika)
         // TODO:084 Pokrenuti program i kraticu jezik upisati "hr" (bez navodnika) te provjeriti ispis
         // TODO:085 Provjeriti do kojih je promjena došlo u kazalu bin\Debug
-        // TODO:086 Na sličan način dodati prijevod za još neki jezin, npr. njemački (kratica "de", prijevod "Guten Tag!")
+        // TODO:086 Na sličan način dodati prijevod za njemački (kratica "de", prijevod "Guten Tag!", odn. "Wie geht's?")
         // TODO:087 Pokrenuti testove (3 testa u grupi "TestLokalizacijeTeksta" moraju proći)
 
         public static string LokaliziranaPoruka(string poruka, string oznakaJezika)

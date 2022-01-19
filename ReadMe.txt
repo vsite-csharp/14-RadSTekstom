@@ -8,7 +8,7 @@ Ilustracija kako .NET Framework rukuje Unicode (UTF-16) znakovima.
 
 NepromjenjivostStringa
 ----------------------
-Ilustracija kako je String nepromjenjivi objekt.
+Ilustracija kako je String nepromjenjivi (immutable) objekt.
 
 
 Funkcije
@@ -62,3 +62,16 @@ Lokalizacija teksta
 -------------------
 Ako treba lokalizirati samo tekstove, treba ručno generirati resx datoteku (Add item - Resource file)
 te ručno kreirati ResourceManager klasu koja će se brinuti o učitavanju odgovarajućih resursa.
+
+
+StringBuilder
+-------------
+Primjer pokazuje koliko je efikasnije za dinamičko slaganje stringova efikasnije koristiit klasu
+StringBuilder.
+
+
+KodiranjeBase64
+---------------
+Primjer kodiranja binarnog sadržaju u base-64 kodiranje i obrnuto. Base-64 kodiranje niz bajtova 
+predstavlja "čitljivim" znakovima iz ASCII skupa. Uočiti kako je Base-64 kodirani niz dulji od izvornog 
+niza jer koristi manji skup znakova (64 znaka, tj. efektivno 6 bitova za svaki bajt).
