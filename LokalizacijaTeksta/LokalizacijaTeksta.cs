@@ -9,7 +9,7 @@ namespace Vsite.CSharp.RadSTekstom
         //  Unutar projekta napraviti presliku datoteke Poruke.resx i preimenovati kopiju u Poruke.hr.resx
         //  U Poruke.hr.resx promijeniti vrijednost resursa "Pozdrav" u "Dobar dan!", a resursa "KakoSte" u "Kako ste?" (bez navodnika)
         //  Pokrenuti program i kraticu jezik upisati "hr" (bez navodnika) te provjeriti ispis
-        // Provjeriti do kojih je promjena došlo u kazalu bin\Debug
+        //  Provjeriti do kojih je promjena došlo u kazalu bin\Debug
         //  Na sličan način dodati prijevod za još neki jezin, npr. njemački (kratica "de", prijevod "Guten Tag!")
         //  Pokrenuti testove (3 testa u grupi "TestLokalizacijeTeksta" moraju proći)
 
