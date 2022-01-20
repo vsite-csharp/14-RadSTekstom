@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LocalizedForm));
             this.labelLanguage = new System.Windows.Forms.Label();
             this.comboBoxLanguages = new System.Windows.Forms.ComboBox();
             this.labelGreeting = new System.Windows.Forms.Label();
@@ -35,46 +36,34 @@
             // 
             // labelLanguage
             // 
-            this.labelLanguage.AutoSize = true;
-            this.labelLanguage.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.labelLanguage, "labelLanguage");
             this.labelLanguage.Name = "labelLanguage";
-            this.labelLanguage.Size = new System.Drawing.Size(58, 13);
-            this.labelLanguage.TabIndex = 0;
-            this.labelLanguage.Text = "Language:";
             // 
             // comboBoxLanguages
             // 
+            resources.ApplyResources(this.comboBoxLanguages, "comboBoxLanguages");
             this.comboBoxLanguages.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLanguages.FormattingEnabled = true;
             this.comboBoxLanguages.Items.AddRange(new object[] {
-            "en",
-            "hr",
-            "de"});
-            this.comboBoxLanguages.Location = new System.Drawing.Point(76, 6);
+            resources.GetString("comboBoxLanguages.Items"),
+            resources.GetString("comboBoxLanguages.Items1"),
+            resources.GetString("comboBoxLanguages.Items2")});
             this.comboBoxLanguages.Name = "comboBoxLanguages";
-            this.comboBoxLanguages.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxLanguages.TabIndex = 1;
             this.comboBoxLanguages.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguages_SelectedIndexChanged);
             // 
             // labelGreeting
             // 
-            this.labelGreeting.Location = new System.Drawing.Point(92, 121);
+            resources.ApplyResources(this.labelGreeting, "labelGreeting");
             this.labelGreeting.Name = "labelGreeting";
-            this.labelGreeting.Size = new System.Drawing.Size(100, 23);
-            this.labelGreeting.TabIndex = 2;
-            this.labelGreeting.Text = "Hello!";
-            this.labelGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LocalizedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 264);
             this.Controls.Add(this.labelGreeting);
             this.Controls.Add(this.comboBoxLanguages);
             this.Controls.Add(this.labelLanguage);
             this.Name = "LocalizedForm";
-            this.Text = "Main Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
