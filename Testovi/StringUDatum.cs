@@ -12,7 +12,7 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
             try
             {
                 PretvorbaStringaUDatum.ParsirajDatume();
-                Assert.AreEqual(new DateTime(2005, 10, 12), cw.GetDate());
+                Assert.AreEqual(DateTime.Parse("12, 10, 5"), cw.GetDate());
                 Assert.AreEqual(new DateTime(2005, 5, 12), cw.GetDate());
                 Assert.AreEqual(new DateTime(2005, 5, 12), cw.GetDate());
                 Assert.AreEqual(new DateTime(2012, 5, 27), cw.GetDate());
