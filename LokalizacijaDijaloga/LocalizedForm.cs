@@ -17,8 +17,8 @@ namespace Vsite.CSharp.RadSTekstom
             InitializeComponent();
         }
 
-        // TODO:070 Pokrenuti program. Otvoriti u File Exploreru kazalo projekta te pogledati sadržaj podkazala bin\Debug
-        // TODO:071 Omogućiti lokalizaciju dijaloga za različite jezike: otvoriti LocalizedForm u Designeru te u prozoru Properties za LocalizedForm promijeniti svojstvo "Localizable" u true
+        // :070 Pokrenuti program. Otvoriti u File Exploreru kazalo projekta te pogledati sadržaj podkazala bin\Debug
+        // :071 Omogućiti lokalizaciju dijaloga za različite jezike: otvoriti LocalizedForm u Designeru te u prozoru Properties za LocalizedForm promijeniti svojstvo "Localizable" u true
         // TODO:072 U prozoru Properties za LocalizedForm svojstvo "Language" promijeniti "Croatian" te za svaku kontrolu (uključujući i zaglavlje glavne forme) prevesti svojstvo Text na hrvatski tekst:
         //  - naslov "Main Form" prevesti u "Glavna Forma"
         //  - "Language:" prevesti u "Jezik:"
