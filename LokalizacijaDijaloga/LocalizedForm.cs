@@ -43,5 +43,10 @@ namespace Vsite.CSharp.RadSTekstom
             foreach (Control control in Controls)
                 resources.ApplyResources(control, control.Name);
         }
+
+        private void labelLanguage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
