@@ -43,5 +43,10 @@ namespace Vsite.CSharp.RadSTekstom
             foreach (Control control in Controls)
                 resources.ApplyResources(control, control.Name);
         }
+
+        private void LocalizedForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
