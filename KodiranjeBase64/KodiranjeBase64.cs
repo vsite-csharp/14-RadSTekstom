@@ -67,16 +67,17 @@ namespace Vsite.CSharp.RadSTekstom
             IspišiZnakove(base64, 64);
             Console.WriteLine();
 
-            // TODO:101 Dodati naredbu koja će niz base64 konvertirati iz Base-64 kodiranja u niz bajtova dekodiraniBajtovi te otkomentirati donje naredbe da se ispiše rezultat konverzije.
+            // Dodati naredbu koja će niz base64 konvertirati iz Base-64 kodiranja u niz bajtova dekodiraniBajtovi te otkomentirati donje naredbe da se ispiše rezultat konverzije.
 
-            //Console.WriteLine($"*** Bajtovi dekodirani iz Base-64 (duljina={dekodiraniBajtovi.Length} bajtova): ***");
-            //IspišiBajtove(dekodiraniBajtovi, 16);
+            var dekodiraniBajtovi = Convert.FromBase64String(base64);
+            Console.WriteLine($"*** Bajtovi dekodirani iz Base-64 (duljina={dekodiraniBajtovi.Length} bajtova): ***");
+            IspišiBajtove(dekodiraniBajtovi, 16);
             Console.WriteLine();
 
-            // TODO:102 Pokrenuti i provjeriti prolazi li test u grupi KodiranjeBase64.
+            // Pokrenuti i provjeriti prolazi li test u grupi KodiranjeBase64.
         }
 
-        // TODO:100 Pokrenuti program i pogledati što će se ispisati.
+        // Pokrenuti program i pogledati što će se ispisati.
         static void Main(string[] args)
         {
             NapraviBase64Konverzije();

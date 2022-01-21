@@ -19,13 +19,18 @@ namespace Vsite.CSharp.RadSTekstom
             return abeceda;
         }
 
-        // TODO:090 Implementirati metodu SložiAbeceduStringBuilderom tako da slova abecede nadovezuje korištenjem klase System.Text.StringBuilder.
-        // TODO:091 Pokrenuti program i provjeriti ispravnost rezultata metode.
-        // TODO:092 Usporediti ispise vremena izvođenja metoda. Ponovno pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti ispise.
-        // TODO:093 Pokrenuti testove i provjeriti prolazi li test u grupi StringBuilder.
+        // Implementirati metodu SložiAbeceduStringBuilderom tako da slova abecede nadovezuje korištenjem klase System.Text.StringBuilder.
+        // Pokrenuti program i provjeriti ispravnost rezultata metode.
+        // Usporediti ispise vremena izvođenja metoda. Ponovno pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti ispise.
+        // Pokrenuti testove i provjeriti prolazi li test u grupi StringBuilder.
         public static string SložiAbeceduStringBuilderom()
         {
-            return "";
+            var abeceda = new System.Text.StringBuilder();
+            for (char c = 'A'; c <= 'Z'; ++c)
+                abeceda.Append(c);
+            for (char c = 'a'; c <= 'z'; ++c)
+                abeceda.Append(c);
+            return abeceda.ToString();
         }
 
         static void Main(string[] args)

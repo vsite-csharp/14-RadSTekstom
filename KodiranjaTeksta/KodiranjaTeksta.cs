@@ -36,7 +36,7 @@ namespace Vsite.CSharp.RadSTekstom
             IspišiKodirajDekodiraj(tekst3, Encoding.Unicode);
             IspišiKodirajDekodiraj(tekst3, Encoding.UTF8);
 
-            // TODO:061 Pogledati sadržaje triju datoteka te identificirati BOM-ove u Unicode i UTF8 datotekama.
+            // Pogledati sadržaje triju datoteka te identificirati BOM-ove u Unicode i UTF8 datotekama.
             // Zapišimo isti tekst u tri datoteke s različitim kodiranjima
             PohraniNaDisk("Đakovački ASCII.txt", Encoding.ASCII, tekst2);
             PohraniNaDisk("Đakovački Unicode.txt", Encoding.Unicode, tekst2);

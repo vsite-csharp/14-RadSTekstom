@@ -18,13 +18,13 @@ namespace Vsite.CSharp.RadSTekstom
             tekst += "dan!";
 
             Console.WriteLine(tekstPreslika[3]);
-            // TODO:015 Otkomentirati donju naredbu i provjeriti može li se program prevesti. 
+            // Otkomentirati donju naredbu i provjeriti može li se program prevesti. 
             //tekstPreslika[1] = 'a';
-            // TODO:016 Postaviti točku prekida na donju naredbu i pogledati što se događa s adresama i memorijom na adresama varijabli tijekom izvođenja donje naredbe. 
-            tekstPreslika.Replace('o', 'a');
-            // TODO:017 Promijeniti gornju naredbu tako da se sadržaj varijable tekstPreslika doista promijeni.
-            // TODO:018 Postaviti točku prekida na naredbu i pogledati što se događa s adresama varijable testPreslika pri pozivu metode string.Replace.
-            // TODO:019 Pokrenuti testove i provjeriti prolazi li test u grupi NepromjenjivostStringa.
+            // Postaviti točku prekida na donju naredbu i pogledati što se događa s adresama i memorijom na adresama varijabli tijekom izvođenja donje naredbe. 
+            tekstPreslika = tekstPreslika.Replace('o', 'a');
+            // Promijeniti gornju naredbu tako da se sadržaj varijable tekstPreslika doista promijeni.
+            // Postaviti točku prekida na naredbu i pogledati što se događa s adresama varijable testPreslika pri pozivu metode string.Replace.
+            // Pokrenuti testove i provjeriti prolazi li test u grupi NepromjenjivostStringa.
 
             Console.WriteLine(tekst);
             Console.WriteLine(tekstPreslika);
