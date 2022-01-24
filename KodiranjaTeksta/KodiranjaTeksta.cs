@@ -8,7 +8,7 @@ namespace Vsite.CSharp.RadSTekstom
 {
     class KodiranjaTeksta
     {
-        // TODO:060 Pokrenuti program i provjeriti kako pretvorbe u pojedine kodne stranice utječu na prikaz jezično-specifičnih znakova
+        // :060 Pokrenuti program i provjeriti kako pretvorbe u pojedine kodne stranice utječu na prikaz jezično-specifičnih znakova
 
         static void Main(string[] args)
         {
@@ -36,7 +36,7 @@ namespace Vsite.CSharp.RadSTekstom
             IspišiKodirajDekodiraj(tekst3, Encoding.Unicode);
             IspišiKodirajDekodiraj(tekst3, Encoding.UTF8);
 
-            // TODO:061 Pogledati sadržaje triju datoteka te identificirati BOM-ove u Unicode i UTF8 datotekama.
+            // :061 Pogledati sadržaje triju datoteka te identificirati BOM-ove u Unicode i UTF8 datotekama.
             // Zapišimo isti tekst u tri datoteke s različitim kodiranjima
             PohraniNaDisk("Đakovački ASCII.txt", Encoding.ASCII, tekst2);
             PohraniNaDisk("Đakovački Unicode.txt", Encoding.Unicode, tekst2);
