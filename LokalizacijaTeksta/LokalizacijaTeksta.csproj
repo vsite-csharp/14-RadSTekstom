@@ -45,6 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LokalizacijaTeksta.cs" />
+    <Compile Include="Poruke.de.Designer.cs">
+      <DependentUpon>Poruke.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Poruke.hr.Designer.cs">
+      <DependentUpon>Poruke.hr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Poruke.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -53,6 +63,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Poruke.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Poruke.de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poruke.hr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Poruke.hr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Poruke.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Poruke.Designer.cs</LastGenOutput>

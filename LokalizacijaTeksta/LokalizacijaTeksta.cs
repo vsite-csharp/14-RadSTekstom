@@ -4,14 +4,14 @@ namespace Vsite.CSharp.RadSTekstom
 {
     public class LokalizacijaTeksta
     {
-        // TODO:080 Pokrenuti program i provjeriti rezultat ispisa (uneseni državni kod nema nikakvog utjecaja!).
-        // TODO:081 Otvoriti u FileExploreru kazalo projekta te pogledati sadržaj potkazala bin\Debug
-        // TODO:082 Unutar projekta napraviti presliku datoteke Poruke.resx i preimenovati kopiju u Poruke.hr.resx
-        // TODO:083 U Poruke.hr.resx promijeniti vrijednost resursa "Pozdrav" u "Dobar dan!", a resursa "KakoSte" u "Kako ste?" (bez navodnika)
-        // TODO:084 Pokrenuti program i kraticu jezik upisati "hr" (bez navodnika) te provjeriti ispis
-        // TODO:085 Provjeriti do kojih je promjena došlo u kazalu bin\Debug
-        // TODO:086 Na sličan način dodati prijevod za još neki jezin, npr. njemački (kratica "de", prijevod "Guten Tag!")
-        // TODO:087 Pokrenuti testove (3 testa u grupi "TestLokalizacijeTeksta" moraju proći)
+        // :080 Pokrenuti program i provjeriti rezultat ispisa (uneseni državni kod nema nikakvog utjecaja!).
+        // :081 Otvoriti u FileExploreru kazalo projekta te pogledati sadržaj potkazala bin\Debug
+        // :082 Unutar projekta napraviti presliku datoteke Poruke.resx i preimenovati kopiju u Poruke.hr.resx
+        // :083 U Poruke.hr.resx promijeniti vrijednost resursa "Pozdrav" u "Dobar dan!", a resursa "KakoSte" u "Kako ste?" (bez navodnika)
+        // :084 Pokrenuti program i kraticu jezik upisati "hr" (bez navodnika) te provjeriti ispis
+        // :085 Provjeriti do kojih je promjena došlo u kazalu bin\Debug
+        // :086 Na sličan način dodati prijevod za još neki jezin, npr. njemački (kratica "de", prijevod "Guten Tag!")
+        // :087 Pokrenuti testove (3 testa u grupi "TestLokalizacijeTeksta" moraju proći)
 
         public static string LokaliziranaPoruka(string poruka, string oznakaJezika)
         {
