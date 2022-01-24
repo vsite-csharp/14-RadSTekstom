@@ -5,10 +5,10 @@ namespace Vsite.CSharp.RadSTekstom
 {
     class PretvorbaStringaUBroj
     {
-        // TODO:040 Dodati u donju metodu poziv metode Parse koja će tekst pretvoriti u double i vratiti rezultat. Pokrenuti program i provjeriti ispise.
+        // :040 Dodati u donju metodu poziv metode Parse koja će tekst pretvoriti u double i vratiti rezultat. Pokrenuti program i provjeriti ispise.
         public static double UDouble(string tekst)
         {
-            throw new NotImplementedException();
+            return Double.Parse(tekst);
         }
 
         // TODO:041 Dodati u donju metodu poziv metode Parse koja kao drugi argument prima IFormatProvider i vratiti rezultat. Pokrenuti program i provjeriti ispise
