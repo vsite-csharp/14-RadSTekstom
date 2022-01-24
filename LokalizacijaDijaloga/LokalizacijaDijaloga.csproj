@@ -55,6 +55,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LocalizedForm.de.resx">
+      <DependentUpon>LocalizedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LocalizedForm.hr.resx">
       <DependentUpon>LocalizedForm.cs</DependentUpon>
     </EmbeddedResource>
