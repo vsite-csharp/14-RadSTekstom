@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Vsite.CSharp.RadSTekstom
 {
@@ -81,9 +80,7 @@ namespace Vsite.CSharp.RadSTekstom
             Console.WriteLine($"Nestatička metoda CompareOrdinal:");
             PozivCompareOrdinal(s1, s2);
 
-            Console.WriteLine();
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(false);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

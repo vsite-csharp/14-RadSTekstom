@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.RadSTekstom
+﻿namespace Vsite.CSharp.RadSTekstom
 {
     class NepromjenjivostStringa
     {
@@ -33,8 +31,7 @@ namespace Vsite.CSharp.RadSTekstom
         {
             PromjeneTeksta();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

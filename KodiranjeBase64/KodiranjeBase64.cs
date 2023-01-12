@@ -81,8 +81,7 @@ namespace Vsite.CSharp.RadSTekstom
         {
             NapraviBase64Konverzije();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

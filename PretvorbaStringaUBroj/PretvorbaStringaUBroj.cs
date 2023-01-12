@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Vsite.CSharp.RadSTekstom
 {
@@ -90,8 +89,7 @@ namespace Vsite.CSharp.RadSTekstom
                 Console.WriteLine($"POGREŠKA: {e.Message}");
             }
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(false);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

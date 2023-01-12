@@ -60,10 +60,7 @@ namespace Vsite.CSharp.RadSTekstom
             štoperica.Stop();
             Console.WriteLine($"Slaganje abecede obično:          {štoperica.ElapsedTicks}");
 
-            Console.WriteLine();
-
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

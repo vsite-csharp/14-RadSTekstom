@@ -13,7 +13,7 @@ namespace Vsite.CSharp.RadSTekstom
         // TODO:086 Na sličan način dodati prijevod za njemački (kratica "de", prijevod "Guten Tag!", odn. "Wie geht's?")
         // TODO:087 Pokrenuti testove (3 testa u grupi "TestLokalizacijeTeksta" moraju proći)
 
-        public static string LokaliziranaPoruka(string poruka, string oznakaJezika)
+        public static string? LokaliziranaPoruka(string poruka, string oznakaJezika)
         {
             System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo(oznakaJezika);
 
@@ -27,19 +27,21 @@ namespace Vsite.CSharp.RadSTekstom
             try
             {
                 Console.WriteLine(Poruke.UpišiteKraticuJezika); // primjer izravnog dohvaćanja resursa
-                string oznakaJezika = Console.ReadLine();
-                // primjer poziva bez promjene aktivnih lokalizacijskih postavki
-                Console.WriteLine(LokaliziranaPoruka("Pozdrav", oznakaJezika));
-                // primjer poziva tako da promijenimo aktivne lokalizacijske postavke
-                Console.WriteLine(LokaliziranaPoruka("KakoSte", oznakaJezika));
+                var oznakaJezika = Console.ReadLine();
+                if (oznakaJezika != null)
+                {
+                    // primjer poziva bez promjene aktivnih lokalizacijskih postavki
+                    Console.WriteLine(LokaliziranaPoruka("Pozdrav", oznakaJezika));
+                    // primjer poziva tako da promijenimo aktivne lokalizacijske postavke
+                    Console.WriteLine(LokaliziranaPoruka("KakoSte", oznakaJezika));
+                }
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

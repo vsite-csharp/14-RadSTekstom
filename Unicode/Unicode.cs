@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.RadSTekstom
+﻿namespace Vsite.CSharp.RadSTekstom
 {
     class Unicode
     {
@@ -28,8 +26,7 @@ namespace Vsite.CSharp.RadSTekstom
 
             // TODO:003 Selektirati prethodne dvije naredbe i iz kontekstnog izbornika odabrati naredbu "Execute in interactive" te provjeriti ispis
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

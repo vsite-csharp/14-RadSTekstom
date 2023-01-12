@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 namespace Vsite.CSharp.RadSTekstom
 {
@@ -42,8 +38,7 @@ namespace Vsite.CSharp.RadSTekstom
             PohraniNaDisk("Đakovački Unicode.txt", Encoding.Unicode, tekst2);
             PohraniNaDisk("Đakovački UTF8.txt", Encoding.UTF8, tekst2);
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(false);
+            Console.WriteLine("\nGOTOVO!!!");
         }
 
         static void IspišiBajtove(string str)

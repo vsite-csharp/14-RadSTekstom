@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.RadSTekstom
+﻿namespace Vsite.CSharp.RadSTekstom
 {
     // primjer kako funkcioniraju metode sa znakovnim nizovima
     class Program
@@ -22,8 +20,7 @@ namespace Vsite.CSharp.RadSTekstom
             Console.WriteLine($"pojam = {pojam}");
             Console.WriteLine($"sat = {sat}");
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(false);
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

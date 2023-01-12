@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.RadSTekstom
+﻿namespace Vsite.CSharp.RadSTekstom
 {
     class PretvorbaStringaUDatum
     {
@@ -21,7 +19,7 @@ namespace Vsite.CSharp.RadSTekstom
             DateTime dt = ParsirajDatumNeovisnoOKulturi(datum, "dd:MM:yyyy");
             Console.WriteLine(dt);
 
-            // TODO:051 Popravite formate u donjim pozivima metode ParsirajDatumNeovisnoOKulturi tako da se dobivaju očekivani datumi
+            // TODO:051 Popraviti formate u donjim pozivima metode ParsirajDatumNeovisnoOKulturi tako da se dobivaju očekivani datumi.
 
             datum = "12.05.5"; // Datum 12. 5. 2005.
             dt = ParsirajDatumNeovisnoOKulturi(datum, "dd:MM:yyyy");
@@ -36,8 +34,7 @@ namespace Vsite.CSharp.RadSTekstom
         {
             ParsirajDatume();
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
+            Console.WriteLine("\nGOTOVO!!!");
         }
     }
 }

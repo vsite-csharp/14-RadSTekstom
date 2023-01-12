@@ -36,18 +36,18 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
             CultureInfo.CurrentCulture = new CultureInfo("en");
 
             PretvorbaStringaUBroj.PokušajUDouble("1.23");
-            Assert.AreEqual(1.23, cw.GetDouble());
+            Assert.AreEqual(1.23, cw?.GetDouble());
 
             PretvorbaStringaUBroj.PokušajUDouble("1,23");
-            Assert.AreEqual(123, cw.GetDouble());
+            Assert.AreEqual(123, cw?.GetDouble());
 
 
             CultureInfo.CurrentCulture = new CultureInfo("hr");
             PretvorbaStringaUBroj.PokušajUDouble("1,23");
-            Assert.AreEqual(1.23, cw.GetDouble());
+            Assert.AreEqual(1.23, cw?.GetDouble());
 
             PretvorbaStringaUBroj.PokušajUDouble("1.23");
-            Assert.AreEqual(123, cw.GetDouble());
+            Assert.AreEqual(123, cw?.GetDouble());
 
             CultureInfo.CurrentCulture = ci;
         }
@@ -56,7 +56,7 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
         public void PokušajUDoubleIspisujePogreškuZaNeispravniUnos()
         {
             PretvorbaStringaUBroj.PokušajUDouble("A");
-            Assert.AreEqual("Neuspješno", cw.GetString());
+            Assert.AreEqual("Neuspješno", cw?.GetString());
         }
     }
 }

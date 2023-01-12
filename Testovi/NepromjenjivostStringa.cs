@@ -10,10 +10,10 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
         public void MetodaReplaceKaoRezultatVraćaNoviObjekt()
         {
             Vsite.CSharp.RadSTekstom.NepromjenjivostStringa.PromjeneTeksta();
-            Assert.AreEqual(3, cw.Count);
-            Assert.AreEqual('a', cw.GetChar());
-            Assert.AreEqual("Dobar dan!", cw.GetString());
-            Assert.AreEqual("Dabar ", cw.GetString());
+            Assert.AreEqual(3, cw?.Count);
+            Assert.AreEqual('a', cw?.GetChar());
+            Assert.AreEqual("Dobar dan!", cw?.GetString());
+            Assert.AreEqual("Dabar ", cw?.GetString());
         }
     }
 }

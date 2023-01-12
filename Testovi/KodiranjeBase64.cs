@@ -9,18 +9,18 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
     {
         private void PreskočiNaslov()
         {
-            string učitano = cw.GetString();
+            var učitano = cw?.GetString();
             while (!učitano.StartsWith("*** "))
             {
-                učitano = cw.GetString();
+                učitano = cw?.GetString();
             }
         }
 
         private string UčitajBlok()
         {
             System.Text.StringBuilder tekst = new System.Text.StringBuilder(); 
-            string učitano;
-            while ((učitano = cw.GetString()).Length > 0)
+            string? učitano;
+            while ((učitano = cw?.GetString()).Length > 0)
             {
                 tekst.Append(učitano);
             }
@@ -31,13 +31,13 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
         public void PovratnaKonverzijaVraćaIzvorniNizBajtova()
         {
             Vsite.CSharp.RadSTekstom.KodiranjeBase64.NapraviBase64Konverzije();
-            Assert.IsTrue(cw.Count > 45);
+            Assert.IsTrue(cw?.Count > 45);
 
             PreskočiNaslov();
             var početni = UčitajBlok();
 
             PreskočiNaslov();
-            var kodirani = UčitajBlok();
+            UčitajBlok();
 
             PreskočiNaslov();
             var dekodirani = UčitajBlok();

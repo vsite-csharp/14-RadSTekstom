@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Threading;
-
-namespace Vsite.CSharp.RadSTekstom
+﻿namespace Vsite.CSharp.RadSTekstom
 {
     public partial class LocalizedForm : Form
     {
@@ -16,7 +6,6 @@ namespace Vsite.CSharp.RadSTekstom
         {
             InitializeComponent();
         }
-
         // TODO:070 Pokrenuti program. Otvoriti u File Exploreru kazalo projekta te pogledati sadržaj podkazala bin\Debug
         // TODO:071 Omogućiti lokalizaciju dijaloga za različite jezike: otvoriti LocalizedForm u Designeru te u prozoru Properties za LocalizedForm promijeniti svojstvo "Localizable" u true
         // TODO:072 U prozoru Properties za LocalizedForm svojstvo "Language" promijeniti "Croatian" te za svaku kontrolu (uključujući i zaglavlje glavne forme) prevesti svojstvo Text na hrvatski tekst:
@@ -36,7 +25,11 @@ namespace Vsite.CSharp.RadSTekstom
 
         private void comboBoxLanguages_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(comboBoxLanguages.SelectedItem.ToString());
+            var selectedCulture = comboBoxLanguages.SelectedItem.ToString();
+            if (selectedCulture != null)
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(selectedCulture);
+            }
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LocalizedForm));
             if (resources.GetString("$this.Text") != null)
                 Text = resources.GetString("$this.Text");
