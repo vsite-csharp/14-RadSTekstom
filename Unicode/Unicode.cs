@@ -2,12 +2,12 @@
 {
     static class Unicode
     {
-        // TODO:000 Pogledati imena donjih varijabli te sadržaje tekstova
-        // TODO:001 Pokrenuti program i provjeriti ispis
+        // 000 Pogledati imena donjih varijabli te sadržaje tekstova
+        // 001 Pokrenuti program i provjeriti ispis
         static void Main()
         {
-            // TODO:002 Otkomentirati donju naredbu i ponovno pokrenuti program te provjeriti ispis
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            // 002 Otkomentirati donju naredbu i ponovno pokrenuti program te provjeriti ispis
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             // latinica
             string varijabla = "Đakovački Božić u šumi";
