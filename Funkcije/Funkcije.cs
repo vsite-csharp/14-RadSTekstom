@@ -1,10 +1,10 @@
 ﻿namespace Vsite.CSharp.RadSTekstom
 {
     // primjer kako funkcioniraju metode sa znakovnim nizovima
-    class Program
+    static class Program
     {
         // TODO:020 Pogledati donji kod i provjeriti što će se ispisati njegovim izvođenjem
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 

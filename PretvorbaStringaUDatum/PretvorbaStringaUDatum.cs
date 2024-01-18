@@ -1,6 +1,6 @@
 ﻿namespace Vsite.CSharp.RadSTekstom
 {
-    class PretvorbaStringaUDatum
+    static class PretvorbaStringaUDatum
     {
         // TODO:050 Provjeriti što će napraviti donje metode Parse i ParseExact.
         // https://docs.microsoft.com/en-us/dotnet/api/system.datetime.parse

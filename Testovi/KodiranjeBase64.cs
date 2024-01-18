@@ -10,7 +10,7 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
         private void PreskočiNaslov()
         {
             var učitano = cw?.GetString();
-            while (!učitano.StartsWith("*** "))
+            while (!učitano!.StartsWith("*** "))
             {
                 učitano = cw?.GetString();
             }
@@ -20,7 +20,7 @@ namespace Vsite.CSharp.RadSTekstom.Testovi
         {
             System.Text.StringBuilder tekst = new System.Text.StringBuilder(); 
             string? učitano;
-            while ((učitano = cw?.GetString()).Length > 0)
+            while ((učitano = cw?.GetString()!).Length > 0)
             {
                 tekst.Append(učitano);
             }

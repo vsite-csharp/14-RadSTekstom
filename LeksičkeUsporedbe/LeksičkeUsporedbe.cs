@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.RadSTekstom
 {
-    class LeksičkeUsporedbe
+    static class LeksičkeUsporedbe
     {
         static string BrojUOdnos(int? broj)
         {
@@ -41,7 +41,7 @@ namespace Vsite.CSharp.RadSTekstom
 
         // TODO:033 Pokrenuti i provjeriti testove (7 testova u grupi "TestLeksičkeUsporedbe" mora proći)
 
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 

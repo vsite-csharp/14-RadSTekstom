@@ -47,10 +47,10 @@ namespace Vsite.CSharp.RadSTekstom
         {
             // Učitavamo binarnu datoteku, tj.datoteku koja sadrži i bajtove koji ne predstavljaju niti
             // jedan od znakova koji se može prikazati (slovo, znamenku, interpunkciju).
-            byte[] bajtovi = null;
+            byte[]? bajtovi = null;
             using (FileStream datoteka = new FileStream("Icon.ico", FileMode.Open, FileAccess.Read))
             {
-                bajtovi = new Byte[datoteka.Length];
+                bajtovi = new byte[datoteka.Length];
                 datoteka.Read(bajtovi, 0, (int)datoteka.Length);
             }
 

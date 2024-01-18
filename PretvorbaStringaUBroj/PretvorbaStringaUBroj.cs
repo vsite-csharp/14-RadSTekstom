@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.RadSTekstom
 {
-    class PretvorbaStringaUBroj
+    static class PretvorbaStringaUBroj
     {
         // TODO:040 Dodati u donju metodu poziv metode Parse koja će tekst pretvoriti u double i vratiti rezultat. Pokrenuti program i provjeriti ispise.
         public static double UDouble(string tekst)
@@ -50,7 +50,7 @@ namespace Vsite.CSharp.RadSTekstom
         }
 
         // TODO:043 Pokrenuti testove (4 testa u grupi "TestStringUBroj" moraju proći)
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 

@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Vsite.CSharp.RadSTekstom
 {
-    public class StringBuilder
+    public static class StringBuilder
     {
         public static string SložiAbeceduObično()
         {
@@ -28,7 +24,7 @@ namespace Vsite.CSharp.RadSTekstom
             return "";
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
 

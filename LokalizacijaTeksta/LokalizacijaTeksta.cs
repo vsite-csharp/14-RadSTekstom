@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.RadSTekstom
 {
-    public class LokalizacijaTeksta
+    public static class LokalizacijaTeksta
     {
         // TODO:080 Pokrenuti program i provjeriti rezultat ispisa (uneseni državni kod nema nikakvog utjecaja!).
         // TODO:081 Otvoriti u FileExploreru kazalo projekta te pogledati sadržaj potkazala bin\Debug
@@ -22,7 +22,7 @@ namespace Vsite.CSharp.RadSTekstom
             return resursi.GetString(poruka, ci);
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             try
             {

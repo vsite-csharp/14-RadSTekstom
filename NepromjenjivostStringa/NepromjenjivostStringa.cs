@@ -1,6 +1,6 @@
 ﻿namespace Vsite.CSharp.RadSTekstom
 {
-    class NepromjenjivostStringa
+    static class NepromjenjivostStringa
     {
         public static void PromjeneTeksta()
         {
@@ -10,8 +10,8 @@
             string tekst = "Dobar ";
             string tekstPreslika = "Dobar ";
 
-            // TODO:012 Postaviti točku prekida (breakpoint) na donju naredbu, pokrenuti program i kada se izvođenje zaustavi, dodati u prozor Watch prikaz *&tekst i *&tekstPreslika (adrese na kojima je pohranjen sadržaj stringa).
-            // TODO:013 Otvoriti prozor sa sadržajem memorije (Debug-Windows-Memory-Memory1) to postaviti adresu na vrijednost koju prikazuje *&tekst, odnosno *&tekstPreslika tako da se vide memorijski sadržaji za tekst i tekstPreslika.
+            // TODO:012 Postaviti točku prekida (breakpoint) na donju naredbu, pokrenuti program i kada se izvođenje zaustavi, dodati u prozor Watch prikaz &tekst i &tekstPreslika (adrese na kojima se nalaze adrese sadržaja stringa).
+            // TODO:013 Otvoriti prozor sa sadržajem memorije (Debug-Windows-Memory-Memory1) to postaviti adresu na vrijednost koju prikazuje &tekst, odnosno &tekstPreslika tako da se vide memorijski sadržaji za tekst i tekstPreslika.
             // TODO:014 Pogledati gornje adrese i što se događa s njima i memorijom na tim adresama tijekom izvođenja donje naredbe. 
             tekst += "dan!";
 
